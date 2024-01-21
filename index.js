@@ -1,8 +1,8 @@
-const express = require('express');
+import express from "express";
 const app = express();
 // const path = require('path');  
 const port = process.env.PORT || 3000 ; 
-const {engine} = require("express-handlebars")
+import { engine } from "express-handlebars";
 
 
 
