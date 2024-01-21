@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const viewsPath = path.join(__dirname, "views");
 app.set('views', viewsPath);
+console.log(viewsPath)
 
 app.use(express.static("public"));
 
