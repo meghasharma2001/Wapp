@@ -1,10 +1,14 @@
 import express from "express";
 const app = express();
-// const path = require('path');  
+import path from "path";
+import { fileURLToPath } from 'url';
 const port = process.env.PORT || 3000 ; 
 import { engine } from "express-handlebars";
 
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const viewsPath = path.join(__dirname, "views");
+app.set('views', viewsPath);
 
 app.use(express.static("public"));
 
@@ -53,4 +57,4 @@ app.listen(port , ()=>{
     //             "dest":"/"
     //         }
     //     ]
-   // }
+   // 
