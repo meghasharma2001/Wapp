@@ -39,3 +39,18 @@ app.listen(port , ()=>{
     console.log(`listen at port no. ${port}`);
 })
 
+// {
+    //     "version":2,
+    //     "builds":[
+    //         {
+    //             "src":"./index.js",
+    //             "use":"@vercel/node"
+    //         }
+    //     ],
+    //     "routes":[
+    //         {
+    //             "src":"/(.*)",
+    //             "dest":"/"
+    //         }
+    //     ]
+   // }
